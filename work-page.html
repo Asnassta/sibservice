@@ -471,7 +471,14 @@
 
 			$(window).scroll(function(event) {
 			    st = $(this).scrollTop();
+			 
 			    fs1 = $('.photo');
+				footer_height = $('footer').height(),
+				page_nav_height = $('.page-nav').height(),
+				main_height = $('main').height()-footer_height-page_nav_height,
+			
+				console.log(main_height);
+
 			    if (st > lastScrollTop)
 			    {
 			 
@@ -484,8 +491,10 @@
 			     } 
 			  }
 			   else {
-			 
-			     $('.page-nav').addClass('fixed');
+				if(main_height > st)
+				{
+			     	$('.page-nav').addClass('fixed');
+				}
 			 
 			   }
 			   lastScrollTop = st;
