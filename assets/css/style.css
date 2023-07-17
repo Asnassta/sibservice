@@ -463,7 +463,8 @@
   .page-intro__info {
     width: 50%;
     background-color: #fff;
-    border: 1px solid #ECECEC; }
+    border: 1px solid #ECECEC;
+    border-top: none; }
   .page-intro__photo {
     position: absolute;
     top: 0;
@@ -1648,6 +1649,7 @@ section {
 /*==========/split=======*/
 /*==========Grid=======*/
 .grid {
+  pointer-events: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
