@@ -2016,7 +2016,6 @@ section {
   overflow: auto;
   left: 0px;
   background: rgba(0, 0, 0, 0.2);
-  padding-bottom: 100px;
   z-index: 500; }
   .popup__inner {
     opacity: 1;
@@ -2788,7 +2787,9 @@ section {
   .photo .section-header__col {
     width: 100%; }
     .photo .section-header__col:nth-child(2) {
-      display: none; } }
+      display: none; }
+  .popup__box {
+    padding-bottom: 100px; } }
 
 @media (max-width: 376px) {
   .about .section-header__col {
