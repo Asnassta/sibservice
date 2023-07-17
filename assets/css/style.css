@@ -905,6 +905,8 @@
   .works .tabs-nav {
     border-top: 1px solid #ECECEC;
     border-bottom: 1px solid #ECECEC; }
+  .works_stocks .section-header__title {
+    border-top: none; }
   .works__inner {
     display: -webkit-box;
     display: -ms-flexbox;
