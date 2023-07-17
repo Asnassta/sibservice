@@ -1277,6 +1277,8 @@ section {
     -webkit-box-flex: 1;
     -ms-flex: 1 1 auto;
     flex: 1 1 auto; }
+  .wrapper_b {
+    padding-bottom: 84px; }
 
 .title-main {
   font-family: "Montserrat", sans-serif;
@@ -2418,6 +2420,9 @@ section {
   border-radius: 27px;
   border: 2px solid #ECECEC; }
 
+.photo_gallery .split:last-child {
+  border-top: 1px solid #ECECEC; }
+
 /*==========/photo===========*/
 /*=============Tabs=============*/
 .tabs-nav {
@@ -2496,6 +2501,8 @@ section {
   .p-tb {
     padding-top: 20px;
     padding-bottom: 20px; }
+  .wrapper_b {
+    padding-bottom: 43px; }
   .slider-navigation {
     padding-top: 20px;
     padding-bottom: 20px; }
@@ -2654,12 +2661,19 @@ section {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
     .photo .section-header__title {
-      width: 100%; }
+      width: 100%;
+      border-bottom: none; }
     .photo .section-header__col {
       padding-top: 10px;
       padding-bottom: 10px;
       border-top: 1px solid #ECECEC;
       width: 50%; }
+  .photo_gallery .section-header__title {
+    width: 50%; }
+  .photo_gallery .section-header__col {
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 25%; }
   .grid {
     display: none; } }
 
@@ -2793,6 +2807,10 @@ section {
     width: 100%; }
     .photo .section-header__col:nth-child(2) {
       display: none; }
+  .photo_gallery .section-header__col {
+    width: 25%; }
+    .photo_gallery .section-header__col:nth-child(2) {
+      display: block; }
   .popup-menu .menu__content {
     padding-bottom: 120px; }
   .popup-contact .popup__box {
