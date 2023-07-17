@@ -1516,6 +1516,9 @@ section {
 @media(max-width: 760px) {
 	.wrapper {
 		padding-top: 108px;
+		&_b {
+			padding-bottom: 40px;
+		}
 	}
 	.tabs-nav {
 		padding: 20px 20px 0;
