@@ -16,7 +16,7 @@
 			</g>
 		</symbol>
 	</svg>
-	<div class="wrapper wrapper_b">
+	<div class="wrapper">
 		<header class="header">
 			<div class="header__inner p-lr">
 				<div class="header__col">
@@ -76,15 +76,6 @@
 					<div class="grid__col"></div>
 				</div>
 			</section><!--/page-intro-->
-			<div class="page-nav">
-				<a href="#" class="page-nav__link p-lr" data-scroll="specifications">Характеристики</a>
-				<a href="#" class="page-nav__link p-lr" data-scroll="installation">Установка</a>
-				<a href="#" class="page-nav__link p-lr" data-scroll="photo">Галерея</a>
-				<a href="#" class="page-nav__link p-lr green open-popup" data-popup="popup-contact">
-					<span>Заказать</span>
-					<img src="assets/images/arrow-wh.svg" alt="">
-				</a>
-			</div><!--/page-nav-->
 			<section class="specifications" id="specifications">
 				<div class="split">
 					<div class="split__item"></div>
@@ -262,13 +253,16 @@
 						</div>
 					</div>
 				</div><!--/tabs-block-->
-				<div class="split">
-					<div class="split__item"></div>
-					<div class="split__item"></div>
-					<div class="split__item"></div>
-					<div class="split__item"></div>
-				</div><!--/split-->
 			</section><!--/photo-->
+			<div class="page-nav fixed">
+				<a href="#" class="page-nav__link p-lr" data-scroll="specifications">Характеристики</a>
+				<a href="#" class="page-nav__link p-lr" data-scroll="installation">Установка</a>
+				<a href="#" class="page-nav__link p-lr" data-scroll="photo">Галерея</a>
+				<a href="#" class="page-nav__link p-lr green open-popup" data-popup="popup-contact">
+					<span>Заказать</span>
+					<img src="assets/images/arrow-wh.svg" alt="">
+				</a>
+			</div><!--/page-nav-->
 		</main>
 		<footer class="footer">
 			<div class="footer__inner">
@@ -470,5 +464,34 @@
 	<script src="assets/js/jquery-3.6.0.min.js"></script>
 	<script src="assets/js/slick.min.js"></script>
 	<script src="assets/js/script.js"></script>
+	<script>
+		$(document).ready(function() {
+			/*========Page-nav (fixed)======*/
+			var lastScrollTop = 0;
+
+			$(window).scroll(function(event) {
+			    st = $(this).scrollTop();
+			    fs1 = $('.photo');
+			    if (st > lastScrollTop)
+			    {
+			 
+			      var hT = $(fs1).offset().top,
+			            hH = $(fs1).outerHeight(),
+			            wH = $(window).height(),
+			            wS = $(this).scrollTop();
+			        if (wS > (hT+hH-wH)){
+			        $('.page-nav').removeClass('fixed');
+			     } 
+			  }
+			   else {
+			 
+			     $('.page-nav').addClass('fixed');
+			 
+			   }
+			   lastScrollTop = st;
+			  });
+  			/*========page-nav (fixed)======*/
+		});
+	</script>
 </body>
 </html>
