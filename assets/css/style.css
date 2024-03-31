@@ -1607,6 +1607,89 @@
       font-size: calc(14px + 2 * ((100vw - 320px) / 1120)); } }
 
 /*=========/select==========*/
+/*========Jq-selectbox=======*/
+.jq-selectbox {
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  z-index: 10; }
+  .jq-selectbox:after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background: url("../images/new-blocks/arrow_min.svg") center no-repeat;
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 1;
+    pointer-events: none;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear; }
+  .jq-selectbox.dropdown:after {
+    -webkit-transform: translateY(-50%) rotate(180deg);
+    -ms-transform: translateY(-50%) rotate(180deg);
+    transform: translateY(-50%) rotate(180deg); }
+  .jq-selectbox.dropdown .jq-selectbox__select {
+    border-radius: 0; }
+  .jq-selectbox.dropdown .disabled {
+    display: none; }
+  .jq-selectbox__select {
+    width: 100%;
+    background-color: #fff;
+    padding: 16px 50px 16px 24px;
+    border: 1px solid #ececec;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    line-height: 1.5; }
+    .jq-selectbox__select:disabled {
+      background-color: #fff; }
+  .jq-selectbox__dropdown {
+    top: 100% !important;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0px;
+    border: 1px solid #ececec;
+    border-top: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none; }
+    .jq-selectbox__dropdown ::-webkit-scrollbar {
+      width: 0;
+      height: 0; }
+    .jq-selectbox__dropdown li {
+      cursor: pointer;
+      width: 100%;
+      background-color: #fff;
+      padding: 16px 50px 16px 24px;
+      border-bottom: 1px solid #ececec;
+      border-radius: 0;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      font-family: "Montserrat", sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      color: #333;
+      line-height: 1.5;
+      position: relative;
+      z-index: 1; }
+      .jq-selectbox__dropdown li:last-child {
+        border-bottom: none; }
+
+/*========/jq-selectbox=======*/
 /*============Sale============*/
 .sale {
   width: 100%; }

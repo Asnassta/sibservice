@@ -28,4 +28,10 @@ $('.product__slider-nav').slick({
   ]
   });
 /*==========/product-slider==========*/
+
+  /*======Select-styler=============*/
+  $(function() {
+    $('.select select').styler();
+  });
+  /*======/select-styler=============*/
 });
