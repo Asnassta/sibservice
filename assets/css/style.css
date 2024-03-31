@@ -1305,8 +1305,7 @@
     width: 75.05%;
     background-color: #fff; }
   .product__infobox {
-    width: 24.75%;
-    max-width: 360px;
+    width: 24.95%;
     min-width: 300px;
     background-color: #3EA433;
     margin-top: -1px; }
@@ -2017,6 +2016,10 @@
       height: 100%;
       -o-object-fit: cover;
       object-fit: cover; }
+    .product-intro__photo_nf img {
+      height: auto;
+      -o-object-fit: contain;
+      object-fit: contain; }
   .product-intro__block {
     width: 50%; }
   .product-intro__name {

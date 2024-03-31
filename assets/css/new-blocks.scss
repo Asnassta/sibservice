@@ -128,8 +128,8 @@
 		background-color: $wh;
 	}
 	&__infobox {
-		width: 24.75%;
-		max-width: 360px;
+		width: 24.95%;
+		//max-width: 360px;
 		min-width: 300px;
 		background-color: $green;
 		margin-top: -1px;
@@ -902,6 +902,12 @@
 			img {
 				height: 100%;
 				object-fit: cover;
+			}
+			&_nf {
+				img {
+					height: auto;
+					object-fit: contain;
+				}
 			}
 		}
 		&__block {
