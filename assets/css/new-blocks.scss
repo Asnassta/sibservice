@@ -659,7 +659,7 @@
 		}
 		&-name {
 			margin-bottom: 20px;
-			span {
+			span, a {
 				&:first-child {
 					font-family: $ff;
 					font-size: 16px;
@@ -823,7 +823,7 @@
 		}
 		&__product {
 			&-name {
-				span {
+				span, a {
 					&:first-child {
 						font-size: 14px;
 					}

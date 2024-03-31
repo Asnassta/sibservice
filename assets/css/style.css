@@ -1837,7 +1837,7 @@
     justify-content: space-between; }
   .order__product-name {
     margin-bottom: 20px; }
-    .order__product-name span:first-child {
+    .order__product-name span:first-child, .order__product-name a:first-child {
       font-family: "Montserrat", sans-serif;
       font-size: 16px;
       font-weight: 600;
@@ -1845,7 +1845,7 @@
       line-height: 1.5;
       margin-bottom: 4px;
       display: block; }
-    .order__product-name span:nth-child(2) {
+    .order__product-name span:nth-child(2), .order__product-name a:nth-child(2) {
       font-family: "Montserrat", sans-serif;
       font-size: 14px;
       font-weight: 500;
@@ -1965,7 +1965,7 @@
       padding: 20px; }
   .order__contact {
     padding: 20px; }
-  .order__product-name span:first-child {
+  .order__product-name span:first-child, .order__product-name a:first-child {
     font-size: 14px; }
   .order__product-price {
     font-size: 14px; }
